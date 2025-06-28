@@ -1,0 +1,62 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 40px auto;
+  max-width: 800px;
+  color: #222;
+  background-color: #fff;
+  padding: 0 15px;
+}
+
+h1 {
+  text-align: center;
+  color: #004080;
+  margin-bottom: 40px;
+}
+
+.venue-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  background-color: #fafafa;
+}
+
+.venue-card h2 {
+  color: #003366;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.venue-card p {
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+.venue-card a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.venue-card a:hover {
+  color: #004080;
+  text-decoration: underline;
+}
+
+
+.search-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
