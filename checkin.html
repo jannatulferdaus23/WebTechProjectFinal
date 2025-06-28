@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="en">   
+<head>
+  <meta charset="UTF-8" />
+  <title>Event Check-In</title>
+  <link rel="stylesheet" href="checkin.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Check-In System</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search by name or booking ID" onkeyup="filterAttendees()" />
+    </div>
+
+    <div class="checkin-card">
+      <h3 class="attendee-name">Sarah Ahmed</h3>
+      <p><strong>Event:</strong> Grand Convention Center</p>
+      <p><strong>Status:</strong> Not Checked In</p>
+      <button>Check In</button>
+    </div>
+
+    <div class="checkin-card">
+      <h3 class="attendee-name">Ryan Lee</h3>
+      <p><strong>Event:</strong> Greenview Park Amphitheater</p>
+      <p><strong>Status:</strong> Checked In</p>
+      <button disabled>Already Checked In</button>
+    </div>
+
+    <div class="checkin-card">
+      <h3 class="attendee-name">Amina Farooq</h3>
+      <p><strong>Event:</strong> City Auditorium</p>
+      <p><strong>Status:</strong> Not Checked In</p>
+      <button>Check In</button>
+    </div>
+
+  </div>
+
+  <script>
+    function filterAttendees() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.checkin-card');
+
+      cards.forEach(card => {
+        const name = card.querySelector('.attendee-name').textContent.toLowerCase();
+        if (name.includes(input)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

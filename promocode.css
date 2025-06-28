@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5faff; 
+  color: #333;
+}
+
+.promo-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.promo-container h2 {
+  color: #004080;
+  margin-bottom: 30px;
+}
+
+.promo-card {
+  background-color: #e6f0ff;
+  border-left: 5px solid #004080;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.promo-code {
+  font-weight: bold;
+  font-size: 18px;
+  color: #004080;
+}
+
+.promo-desc {
+  margin-top: 5px;
+  font-size: 15px;
+}

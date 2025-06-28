@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4ff; 
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.contact-container h2 {
+  color: #004080;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+.contact-info strong {
+  color: #004080;
+}

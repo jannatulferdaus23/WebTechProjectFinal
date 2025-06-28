@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Waitlist</title>
+  <link rel="stylesheet" href="waitlist.css" />
+</head>
+<body>
+
+  <h2>Waitlist Registration</h2>
+
+  <form id="waitlistForm">
+    <label for="name">Full Name:</label><br/>
+    <input type="text" id="name" name="name" required /><br/>
+
+    <label for="email">Email:</label><br/>
+    <input type="email" id="email" name="email" required /><br/>
+
+    <label for="phone">Phone Number:</label><br/>
+    <input type="tel" id="phone" name="phone" /><br/>
+
+    <label for="event">Select Event:</label><br/>
+    <select id="event" name="event" required>
+      <option disabled selected value="">-- Select an event --</option>
+      <option>Grand Convention Center</option>
+      <option>Greenview Park Amphitheater</option>
+      <option>City Auditorium</option>
+    </select><br/>
+
+    <button type="submit">Join Waitlist</button>
+  </form>
+
+  <div id="message"></div>
+
+  <script>
+    document.getElementById('waitlistForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('message').textContent = "Thank you for joining the waitlist! We will notify you if a spot opens up.";
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
